@@ -1,0 +1,15 @@
+{
+  "name": "css-in-js-presentation",
+  "version": "1.0.0",
+  "description": "Presentation for CSS-in-JS sharing session",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck slides.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^2.2.3"
+  }
+}
