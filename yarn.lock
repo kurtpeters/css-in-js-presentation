@@ -4882,8 +4882,8 @@ range-parser@^1.0.3, range-parser@~1.2.0:
 
 raw-loader@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-2.0.0.tgz#e2813d9e1e3f80d1bbade5ad082e809679e20c26"
-  integrity sha512-kZnO5MoIyrojfrPWqrhFNLZemIAX8edMOCp++yC5RKxzFB3m92DqKNhKlU6+FvpOhWtvyh3jOaD7J6/9tpdIKg==
+  resolved "https://artifactory.grubhub.com/artifactory/api/npm/yarn-repos/raw-loader/-/raw-loader-2.0.0.tgz?dl=https://registry.npmjs.org/raw-loader/-/raw-loader-2.0.0.tgz#e2813d9e1e3f80d1bbade5ad082e809679e20c26"
+  integrity sha1-4oE9nh4/gNG7reWtCC6AlnniDCY=
   dependencies:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"

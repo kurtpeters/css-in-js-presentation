@@ -1,7 +1,10 @@
-export { default as theme } from './theme'
+import { syntaxHighlighterPrism } from 'mdx-deck/themes';
+import customTheme from './theme';
 import BGImage from './src/bg-image'
 import { Image, Appear, Notes } from 'mdx-deck';
 import { Box, Flex, Stack } from 'gh-spacing-components';
+
+export const themes = [syntaxHighlighterPrism, customTheme]
 
 <BGImage src={require('file-loader!./images/tsarbomba.jpg')} />
 
@@ -142,18 +145,47 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
 
 ---
 
-### What CSS-in-JS is NOT
-<ul>
-<Appear>
-  <li>Inline styles</li>
-</Appear>
-</ul>
+### So, what exactly is CSS-in-JS?
+
+---
+
+### What it is NOT
+
+```jsx
+  const styles = {
+    color: white, 
+    backgroundColor: black
+  };
+  <p style={styles}>inline style!</p>
+```
+
+<Notes>
+  When CSS-in-JS was first proposed, this was the solution.  Using inline styles.  Technically, that works.
+  However, it has serious flaws.  You can't use pseudo selectors like :disabled, :before, :nth-child.
+  Media queries are also not going to work with inline styles.
+  There are some libraries like Radium that go this route and add some of the needed CSS stuff back...but, this 
+  approach has gone out of favor.
+</Notes>
+
+---
+
+### What it IS
+
+Let's look at [styled-components](https://www.styled-components.com/).
+
+---
+
+### TODO: link to codepen
+
+---
+
+### TODO: Show examples from gh-spacing-components (Storybook)
 
 ---
 
 ### Some Alternatives
-* CSS Modules
-* Pure Web Components (Shadow DOM)
+* [CSS Modules](https://glenmaddern.com/articles/css-modules)
+* [LitElement](https://lit-element.polymer-project.org/) - Shadow DOM
 
 ---
 

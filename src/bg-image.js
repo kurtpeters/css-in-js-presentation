@@ -11,7 +11,6 @@ const Img = styled.img`
 `;
 
 const BGImage = ({ src }) => {
-  console.log(src);
   return <Img src={src} />;
 }
 export default BGImage;

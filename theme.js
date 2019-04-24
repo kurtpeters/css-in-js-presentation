@@ -5,5 +5,8 @@ export default {
   font: 'Futura, sans-serif',
   colors: {
     background: 'transparent'
+  },
+  code: {
+    fontSize: 36
   }
 }
