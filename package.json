@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^2.2.3"
+    "file-loader": "^3.0.1",
+    "mdx-deck": "^2.2.3",
+    "mdx-deck-live-code": "^1.0.1",
+    "raw-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "gh-spacing-components": "^2.0.15",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "styled-system": "^4.1.0"
   }
 }

@@ -1,5 +1,97 @@
-# CSS-in-JS: 😱
+export { default as theme } from './theme'
+import BGImage from './src/bg-image'
+import { Image, Appear, Notes } from 'mdx-deck';
+import { Box, Flex, Stack } from 'gh-spacing-components';
+
+<BGImage src={require('file-loader!./images/tsarbomba.jpg')} />
+
+# CSS-in-JS  😱
 
 ---
 
-# Another slide
+### My Goal is to get you
+<Flex>
+  <Stack x={100}>
+    <Stack y={2}>
+      <Box fontSize={100}>🙄</Box>
+    </Stack>
+    <Box>
+      From this...
+    </Box>
+  </Stack>
+
+  <Stack x={100}>
+    <Stack y={2}>
+      <Box fontSize={100}>🤔</Box>
+    </Stack>
+    <Box>
+      To this...
+    </Box>
+  </Stack>
+
+  <Box>
+    <Stack y={2}>
+      <Box fontSize={100}>😍</Box>
+    </Stack>
+    <Box>
+      Or even this.
+    </Box>
+  </Box>
+</Flex>
+
+<Notes>My goal is for people to come out of this presentation with a cautiously optimisitic view of CSS-in-JS and to abandon some misconceptions about what it actually is.</Notes>
+
+---
+
+### Why not just CSS-in-CSS?
+
+<ul>
+<Appear>
+  <li>Implicit global scope</li>
+  <li>Easy to cause unintended consequences</li>
+  <li>CSS is primarily a document-based architecture</li>
+  <li>Cascading rules can cause problems: !important</li>
+</Appear>
+</ul>
+
+<Notes>CSS was developed at a time in the web when we were styling documents, not creating complex web apps in a component-based architecture.
+Cascading rules can cause issues.  Lead to nasty things like !important.
+</Notes> 
+
+--- 
+
+### What about BEM, SASS, LESS?
+
+<Notes>
+  Technology like SASS and LESS at least give us the ability to modularize and reuse CSS.  Combined with a naming discipline like BEM,
+  This can get us past most of the problems of plain old CSS.
+  However, there are some drawbacks.
+</Notes>
+
+---
+
+
+
+---
+
+# Kurt's exercise on naming
+
+---
+
+# CSS stats information about our current BEM approach
+
+---
+
+### What CSS-in-JS is NOT
+<ul>
+<Appear>
+  <li>Inline styles</li>
+</Appear>
+</ul>
+
+---
+
+
+---
+
+
