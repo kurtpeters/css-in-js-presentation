@@ -84,8 +84,9 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
 <Appear>
   <li>Another syntax to learn with SASS/LESS</li>
   <li>Style still separate from our component logic</li>
+  <li>Can still have conflicts: SASS-quatch, anyone?</li>
   <li>Hard to refactor/remove unused styles</li>
-  <li>BEM: Naming is hard</li>
+  <li>BEM Naming Fatigue</li>
 </Appear>
 </ul>
 
@@ -107,17 +108,37 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
   </Box>
 </Flex>
 
+<Box mt={50} fontSize={12}>
+  <Flex justifyContent="center">
+    <Box>
+      <a target="_blank" href="https://www.reddit.com/r/css/comments/74anpd/how_i_spend_my_time_writing_css_this_is_so_true/">
+        https://www.reddit.com/r/css/comments/74anpd/how_i_spend_my_time_writing_css_this_is_so_true/
+      </a>
+    </Box>
+  </Flex>
+</Box>
+
 ---
 
-### Kurt's exercise on naming
+### Kurt's BEM exercise
 
-<Notes>TODO: add examples of the exercise.  Talk about how we all came to different names.  Naming fatigue.</Notes>
+<Box mt={50} fontSize={18}>
+  <Flex justifyContent="center">
+    <Box>
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1_Hv5EnOuPjkrd8J247uzv1PxU3qsLr1IhnSzC_wyxxI/edit#gid=0">
+        https://docs.google.com/spreadsheets/d/1_Hv5EnOuPjkrd8J247uzv1PxU3qsLr1IhnSzC_wyxxI/edit#gid=0
+      </a>
+    </Box>
+  </Flex>
+</Box>
 
----
-
-### CSS stats information about our current BEM approach
-
-<Notes>Show that even with adopting BEM, we still have inefficient CSS being generated for GFR</Notes>
+<Notes>
+  Kurt sent out a surveymonkey that had two relatively simple components: A promotional tile with a CTA button, and a Footer
+  that would be rendered on a website.
+  Given the JSX/HTML to render these components, he asked what would the CSS classnames be using a BEM approach.
+  The variety of answers highlights the problem of BEM across a large organization.  Indeed it is the universal problem of Naming in
+  software development.
+</Notes>
 
 ---
 
@@ -130,3 +151,11 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
 
 ---
 
+### Some Alternatives
+* CSS Modules
+* Pure Web Components (Shadow DOM)
+
+---
+
+<BGImage src={require('file-loader!./images/tsarbomba.jpg')} />
+That's all folks.
