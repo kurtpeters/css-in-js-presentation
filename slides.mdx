@@ -39,7 +39,11 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
   </Box>
 </Flex>
 
-<Notes>My goal is for people to come out of this presentation with a cautiously optimisitic view of CSS-in-JS and to abandon some misconceptions about what it actually is.</Notes>
+<Notes>
+  My goal is for people to come out of this presentation with a cautiously optimisitic view of CSS-in-JS and to abandon some misconceptions about what it actually is.
+  CSS-in-JS has become increasingly popular in the React community and the toolset has matured significantly.
+  We are currently piloting its use in the new external Menus editor subapp and have had really positive vibes so far. 
+</Notes>
 
 ---
 
@@ -54,8 +58,11 @@ import { Box, Flex, Stack } from 'gh-spacing-components';
 </Appear>
 </ul>
 
-<Notes>CSS was developed at a time in the web when we were styling documents, not creating complex web apps in a component-based architecture.
-Cascading rules can cause issues.  Lead to nasty things like !important.
+<Notes>
+  First, I want to review the problems with CSS.
+  CSS was designed at a time in the web when we were just styling documents, not creating complex web apps.
+  In the world of component-based frontend architectures like React and Vue, cascading style rules can cause real headaches.
+  Which lead to nasty things like !important.
 </Notes> 
 
 --- 
@@ -63,22 +70,54 @@ Cascading rules can cause issues.  Lead to nasty things like !important.
 ### What about BEM, SASS, LESS?
 
 <Notes>
-  Technology like SASS and LESS at least give us the ability to modularize and reuse CSS.  Combined with a naming discipline like BEM,
+  Technology like SASS and LESS have come along and at least give us the ability to modularize and reuse CSS.  
+  Naming disciplines such as BEM have been developed to avoid style collisions between components in an application.
   This can get us past most of the problems of plain old CSS.
   However, there are some drawbacks.
 </Notes>
 
 ---
 
+### Drawbacks
 
+<ul>
+<Appear>
+  <li>Another syntax to learn with SASS/LESS</li>
+  <li>Style still separate from our component logic</li>
+  <li>Hard to refactor/remove unused styles</li>
+  <li>BEM: Naming is hard</li>
+</Appear>
+</ul>
+
+<Notes>
+  Even though SASS/LESS and BEM can help a developer get past some of the inherit problems with CSS, not all is rosy.
+  SASS and LESS each have a unique syntax which is another thing that must be learned by the developer.  They generally
+  require to be executed as part of a build process to generate CSS for the application.  We are still keeping our styles
+  in separate files away from the other logic of our application components which must be managed as part of the code.
+  With BEM, it requires skill to name things appropriately so that there aren't collisions.  And we all know how hard
+  naming is in software development.  Is this a Block, modifier, element?  If we integrate a third party library, there could
+  still be a possiblity that there will be style conflicts if we have a naming collision.
+</Notes>
 
 ---
 
-# Kurt's exercise on naming
+<Flex justifyContent="center">
+  <Box>
+    <Image style={{ width: '800px', height: '600px', backgroundSize: 'contain'}} src={require('file-loader!./images/how-i-spend-time-writing-css.jpg')} />
+  </Box>
+</Flex>
 
 ---
 
-# CSS stats information about our current BEM approach
+### Kurt's exercise on naming
+
+<Notes>TODO: add examples of the exercise.  Talk about how we all came to different names.  Naming fatigue.</Notes>
+
+---
+
+### CSS stats information about our current BEM approach
+
+<Notes>Show that even with adopting BEM, we still have inefficient CSS being generated for GFR</Notes>
 
 ---
 
@@ -90,8 +129,4 @@ Cascading rules can cause issues.  Lead to nasty things like !important.
 </ul>
 
 ---
-
-
----
-
 
